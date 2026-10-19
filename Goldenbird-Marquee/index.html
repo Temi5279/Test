@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goldenbird Marquee | Abuja</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Images/goldenbird-01.jpg') center/cover no-repeat;
+      height: 70vh;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: 1px;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      opacity: 0.95;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #c9a227;
+      color: white;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #b08d1f;
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #1a1a1a;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 20px;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      text-align: center;
+    }
+
+    .service-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      color: #c9a227;
+    }
+
+    .contact {
+      text-align: center;
+      background: #1a1a1a;
+      color: white;
+      padding: 60px 20px;
+      border-radius: 16px;
+      margin-top: 40px;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero-content h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <div class="hero-content">
+      <h1>Goldenbird Marquee</h1>
+      <p>Elegant Event Venue in Wuye, Abuja</p>
+      <a href="https://wa.me/2349033948693" class="btn">Book Now</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>About Our Venue</h2>
+    <p class="about">
+      Goldenbird Marquee is a premium event space perfect for weddings, receptions, 
+      church programs, birthdays, and corporate events. Beautifully decorated halls 
+      with modern lighting and ample space for your guests.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Our Space</h2>
+    <div class="gallery">
+      <img src="Images/goldenbird-01.jpg" alt="Goldenbird Marquee Hall">
+      <img src="Images/goldenbird-02.jpg" alt="Wedding Setup">
+      <img src="Images/goldenbird-03.jpg" alt="Event Decoration">
+      <img src="Images/goldenbird-04.jpg" alt="Reception Hall">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section>
+    <h2>What We Offer</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Wedding Receptions</h3>
+        <p>Beautiful setups for your special day</p>
+      </div>
+      <div class="service-card">
+        <h3>Church Programs</h3>
+        <p>Spacious hall for services & events</p>
+      </div>
+      <div class="service-card">
+        <h3>Parties & Celebrations</h3>
+        <p>Birthdays, anniversaries & more</p>
+      </div>
+      <div class="service-card">
+        <h3>Corporate Events</h3>
+        <p>Meetings, launches & conferences</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="contact">
+      <h2>Ready to Book?</h2>
+      <p>📍 Plot 859A Ameh Ebute St, Wuye, Abuja</p>
+      <p>📞 0903 394 8693</p>
+      <br>
+      <a href="https://wa.me/2349033948693" class="btn">Book on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Goldenbird Marquee · Wuye, Abuja
+  </footer>
+
+</body>
+</html>
