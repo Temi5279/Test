@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Studio | Photography</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 75vh;
+      min-height: 450px;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                  url('Images/nova-01.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ffffff;
+      color: #111;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 45px;
+      font-weight: 600;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto;
+      color: #bbb;
+      font-size: 1.1rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #1a1a1a;
+      padding: 28px 22px;
+      border-radius: 12px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+
+    .service-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .service-card p {
+      color: #999;
+      font-size: 0.95rem;
+    }
+
+    .contact {
+      background: #1a1a1a;
+      border-radius: 16px;
+      padding: 60px 30px;
+      text-align: center;
+      border: 1px solid #2a2a2a;
+    }
+
+    .contact p {
+      color: #bbb;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #222;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <div class="hero">
+      <h1>NOVA STUDIO</h1>
+      <p>Modern Photography Studio in Galadimawa</p>
+      <a href="https://wa.me/2348103177339" class="btn">Book a Session</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>About the Studio</h2>
+    <p class="about">
+      Nova Studio is a clean and modern photography space designed for 
+      portraits, bridal shoots, maternity, and creative sessions. 
+      Professional lighting and a calm environment for your best photos.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Studio Space</h2>
+    <div class="gallery">
+      <img src="Images/nova-01.jpg" alt="Nova Studio">
+      <img src="Images/nova-02.jpg" alt="Studio Setup">
+      <img src="Images/nova-03.jpg" alt="Photography Session">
+      <img src="Images/nova-04.jpg" alt="Portrait Session">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <h3>Portrait Photography</h3>
+        <p>Professional headshots & personal portraits</p>
+      </div>
+      <div class="service-card">
+        <h3>Bridal & Wedding</h3>
+        <p>Pre-wedding and bridal sessions</p>
+      </div>
+      <div class="service-card">
+        <h3>Maternity</h3>
+        <p>Beautiful maternity photoshoots</p>
+      </div>
+      <div class="service-card">
+        <h3>Studio Rental</h3>
+        <p>Rent the space for your own shoot</p>
+      </div>
+      <div class="service-card">
+        <h3>Events & Parties</h3>
+        <p>Coverage for special occasions</p>
+      </div>
+      <div class="service-card">
+        <h3>Creative Shoots</h3>
+        <p>Fashion, model & concept photography</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="contact">
+      <h2>Book Your Session</h2>
+      <p>📍 Amsco Platinum City Estate, Galadimawa, Abuja</p>
+      <p>📞 0810 317 7339</p>
+      <br>
+      <a href="https://wa.me/2348103177339" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Nova Studio · Galadimawa, Abuja
+  </footer>
+
+</body>
+</html>
