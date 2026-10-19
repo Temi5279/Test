@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barcardi Restaurant & Cafe | Wuse 2 Abuja</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #fffaf5;
+      color: #2c2c2c;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 75vh;
+      min-height: 460px;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), 
+                  url('Images/barcardi-01.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.9rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 28px;
+      opacity: 0.95;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e85d04;
+      color: white;
+      padding: 14px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d00000;
+      transform: translateY(-2px);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 65px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+      color: #1a1a1a;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 10px;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 28px 18px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 8px;
+      color: #e85d04;
+    }
+
+    .contact {
+      background: #1a1a1a;
+      color: white;
+      border-radius: 16px;
+      padding: 55px 25px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      color: white;
+    }
+
+    .contact p {
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <div class="hero">
+      <h1>Barcardi Restaurant & Cafe</h1>
+      <p>Wuse 2, Abuja · Rooftop Views · Great Food</p>
+      <a href="https://wa.me/2347089118913" class="btn">Reserve a Table</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>Welcome to Barcardi</h2>
+    <p class="about">
+      A spacious restaurant and cafe in the heart of Wuse 2. 
+      Perfect for family dining, groups, and sunset views from the rooftop. 
+      Enjoy continental and local dishes in a relaxed atmosphere.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section>
+    <h2>Our Space</h2>
+    <div class="gallery">
+      <img src="Images/barcardi-01.jpg" alt="Barcardi Restaurant">
+      <img src="Images/barcardi-02.jpg" alt="Dining Area">
+      <img src="Images/barcardi-03.jpg" alt="Food">
+      <img src="Images/barcardi-04.jpg" alt="Rooftop">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <h2>Why People Love Us</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Rooftop Seating</h3>
+        <p>Beautiful views and outdoor dining</p>
+      </div>
+      <div class="feature-card">
+        <h3>Family Friendly</h3>
+        <p>Spacious and perfect for groups</p>
+      </div>
+      <div class="feature-card">
+        <h3>Great Menu</h3>
+        <p>Continental & local dishes</p>
+      </div>
+      <div class="feature-card">
+        <h3>Delivery & Takeaway</h3>
+        <p>Available for your convenience</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <div class="contact">
+      <h2>Visit or Reserve</h2>
+      <p>📍 19 Ajesa Street, Wuse 2, Abuja</p>
+      <p>📞 0708 911 8913</p>
+      <br>
+      <a href="https://wa.me/2347089118913" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Barcardi Restaurant & Cafe · Wuse 2, Abuja
+  </footer>
+
+</body>
+</html>
